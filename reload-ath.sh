@@ -1,7 +1,9 @@
 #!/bin/sh
 
-modprobe -r ath10k_pci
-service network-manager stop
+sudo modprobe -r ath10k_pci
+sudo service network-manager stop
+sudo service networking stop
 sleep 5
-service network-manager start
-modprobe -v ath10k_pci
+sudo service networking start
+sudo service network-manager start
+sudo modprobe -v ath10k_pci

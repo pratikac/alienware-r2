@@ -5,8 +5,9 @@
 
 case $1 in
      resume|thaw)
-        echo 1 > /sys/bus/pci/devices/0000\:00\:1c.4/rescan
- echo 1 > /sys/bus/pci/devices/0000\:00\:1c.5/rescan
- echo 1 > /sys/bus/pci/devices/0000\:00\:1c.6/rescan
+        echo 1 > /sys/bus/pci/devices/0000\:3b\:00\.0/rescan
+        echo 1 > /sys/bus/pci/devices/0000\:3c\:00\.0/rescan
+        echo 1 > /sys/bus/pci/devices/0000\:3d\:00\.0/rescan
+        echo 1 > /sys/bus/pci/devices/0000\:3e\:00\.0/rescan
         ;;
 esac
